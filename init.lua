@@ -20,8 +20,15 @@ require('impatient')
 -- Enable Telescope
 require('telescope').load_extension('projects')
 
--- Enable nvim-tree
-require('nvim-tree').setup {}    
+-- Enable nvim-tree and configure it to work with project.nvim
+require('nvim-tree').setup {
+    sync_root_with_cwd = true,
+    respect_buf_cwd = true,
+    update_focused_file = {
+        enable = true,
+        update_root = true
+    },
+}
 
 -- Set Lualine theme to match nvim theme
 require('lualine').setup {
@@ -46,14 +53,7 @@ require('mason').setup {}
 require('glow').setup {}
 
 -- Enable project support
-require('project_nvim').setup {
-    sync_root_with_cwd = true,
-    respect_buf_cwd = true,
-    update_focused_file = {
-        enable = true,
-        update_root = true
-    },
-}
+require('project_nvim').setup {}
 
 -- Enable trouble plugin to get a dedicated pane for errors and warnings
 require('trouble').setup {

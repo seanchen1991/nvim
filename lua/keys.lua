@@ -34,5 +34,8 @@ map('n', '<leader>md', '<cmd>Glow<cr>', {})
 
 -- Mappings for Hop
 map('n', '<leader>hw', '<cmd>HopWord<cr>', {})
-map('n', '<leader>h1', '<cmd>HopChar1<cr>', {})
-map('n', '<leader>h2', '<cmd>HopChar2<cr>', {})
+map('n', '<leader>1', '<cmd>HopChar1<cr>', {})
+map('n', '<leader>2', '<cmd>HopChar2<cr>', {})
+
+-- Remap the :bdelete command for deleting a buffer
+map('n', '<leader>bd', '<cmd>bdelete<cr>', {})
