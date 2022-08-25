@@ -11,9 +11,6 @@ map('n', '<leader>gd', '<cmd>Telescope lsp_definitions<cr>', {})
 map('n', '<leader>gr', '<cmd>Telescope lsp_references<cr>', {})
 map('n', '<leader>pp', '<cmd>Telescope projects<cr>', {})
 
--- Toggle Tagbar to view function definitions
-map('n', '<leader>tt', '<cmd>TagbarToggle<cr>', {})
-
 -- Better commenting mappings
 map('n', 'gc', '<cmd>CommentToggle<cr>', {})
 map('v', 'gc', ':<cmd>CommentToggle<cr>', {})
@@ -38,4 +35,4 @@ map('n', '<leader>1', '<cmd>HopChar1<cr>', {})
 map('n', '<leader>2', '<cmd>HopChar2<cr>', {})
 
 -- Remap the :bdelete command for deleting a buffer
-map('n', '<leader>bd', '<cmd>bdelete<cr>', {})
+map('n', '<leader>bc', '<cmd>bclose<cr>', {})

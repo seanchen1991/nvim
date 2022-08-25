@@ -35,9 +35,6 @@ return require('packer').startup(function(use)
         requires = { 'nvim-lua/plenary.nvim' }
     }
 
-    -- To view the structure of classes or functions defined in a file
-    use 'majutsushi/tagbar'
-
     -- To more clearly show indent lines
     use 'Yggdroot/indentLine'
 
