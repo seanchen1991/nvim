@@ -34,5 +34,8 @@ map('n', '<leader>hw', '<cmd>HopWord<cr>', {})
 map('n', '<leader>1', '<cmd>HopChar1<cr>', {})
 map('n', '<leader>2', '<cmd>HopChar2<cr>', {})
 
--- Remap the :bdelete command for deleting a buffer
+-- Remap the :bdelete command for closing a buffer
 map('n', '<leader>bc', '<cmd>bclose<cr>', {})
+
+-- Remap splitting a window to the right
+map('n', '<leader>sl', '<C-w><C-v>', {})
