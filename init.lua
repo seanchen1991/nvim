@@ -89,6 +89,11 @@ local rt = {
 }
 require('rust-tools').setup(rt)
 
+-- Auto-format on save
+vim.cmd([[
+autocmd BufWritePre *.rs lua vim.lsp.buf.formatting_sync(nil, 200)
+]])
+
 -- LSP diagnostics setup
 local sign = function(opts)
     vim.fn.sign_define(opts.name, {
