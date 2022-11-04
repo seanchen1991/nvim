@@ -5,6 +5,9 @@ return require('packer').startup(function(use)
 
     -- Have Packer manage itself
     use 'wbthomason/packer.nvim'    
+    
+    -- Icons for nvim-tree and lualine
+    use 'nvim-tree/nvim-web-devicons'
 
     -- File browser
     use {
@@ -80,16 +83,13 @@ return require('packer').startup(function(use)
     use 'folke/trouble.nvim'
 
     -- Leverage Treesitter to highlight argument definitions
-    use 'm-demare/hlargs.nvim'
+    -- use 'm-demare/hlargs.nvim'
 
     -- Highlight other uses of the word under the cursor
     use 'RRethy/vim-illuminate'
 
     -- Easier commenting
     use 'terrortylor/nvim-comment'
-    
-    -- Markdown preview 
-    use 'ellisonleao/glow.nvim'
 
     -- Project support
     use { 

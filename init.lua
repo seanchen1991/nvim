@@ -27,6 +27,11 @@ require('impatient')
 -- Enable Telescope
 require('telescope').load_extension('projects')
 
+-- Enable icons
+require('nvim-web-devicons').setup {
+    default = true
+}
+
 -- Enable nvim-tree and configure it to work with project.nvim
 require('nvim-tree').setup {
     sync_root_with_cwd = true,
@@ -47,13 +52,10 @@ require('hop').setup {}
 require('nvim-autopairs').setup {}
 
 -- Enable highlighting of argument definitions
-require('hlargs').setup {}
+-- require('hlargs').setup {}
 
 -- Enable mason for installing and managing LSP servers
 require('mason').setup {}
-
--- Enable Glow for markdown previewing
-require('glow').setup {}
 
 -- Enable project support
 require('project_nvim').setup {}
@@ -188,7 +190,7 @@ require('nvim-treesitter.configs').setup {
     ensure_installed = { 'lua', 'rust', 'toml' },
     auto_install = true,
     highlight = {
-        enable = true,
+        enable = false,
         additional_vim_regex_highlighting = false,
     },
     ident = { enable = true },
