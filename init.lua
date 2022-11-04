@@ -15,6 +15,10 @@ require('plug')    -- Plugins
 -- PLUGINS
 
 -- Enable oh-lucy colorscheme
+vim.g.oh_lucy_italic_comments = true
+vim.g.oh_lucy_italic_functions = true
+vim.g.oh_lucy_transparent_background = true
+
 vim.cmd[[colorscheme oh-lucy]]
 
 -- Enable Impatient plugin for faster startup
@@ -33,12 +37,8 @@ require('nvim-tree').setup {
     },
 }
 
--- Set Lualine theme to match nvim theme
-require('lualine').setup {
-    options = {
-        theme = 'onedark'
-    }
-}
+-- Set Lualine theme to its default
+require('lualine').setup {}
 
 -- Enable Hop for faster navigation
 require('hop').setup {}
