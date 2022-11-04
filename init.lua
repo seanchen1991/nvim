@@ -14,6 +14,9 @@ require('plug')    -- Plugins
 
 -- PLUGINS
 
+-- Enable oh-lucy colorscheme
+vim.cmd[[colorscheme oh-lucy]]
+
 -- Enable Impatient plugin for faster startup
 require('impatient')
 
@@ -195,14 +198,4 @@ require('nvim-treesitter.configs').setup {
         max_file_lines = nil,
     }
 }
-
-
-
-
-
-
-
-
-
-
 

@@ -27,7 +27,8 @@ return require('packer').startup(function(use)
     -- Theme
     -- use 'tanvirtin/monokai.nvim'
     -- use 'Mofiqul/dracula.nvim'
-    use 'navarasu/onedark.nvim'
+    -- use 'navarasu/onedark.nvim'
+    use 'Yazeed1s/oh-lucy.nvim'
     
     -- To quickly find files
     use {
